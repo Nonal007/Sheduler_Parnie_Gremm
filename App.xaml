@@ -1,0 +1,9 @@
+﻿<Application x:Class="Sheduler_Parnie_Gremm.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Sheduler_Parnie_Gremm"
+             StartupUri="Sheduler.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

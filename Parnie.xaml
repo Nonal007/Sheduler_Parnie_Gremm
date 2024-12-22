@@ -1,0 +1,52 @@
+﻿<Window x:Class="Sheduler_Parnie_Gremm.Parnie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sheduler_Parnie_Gremm"
+        mc:Ignorable="d"
+                WindowStyle="None"
+        AllowsTransparency="True"
+        Opacity="1"
+        Background="Black"
+
+        Title="Parnie" Height="600" Width="640" ResizeMode="NoResize">
+    <Grid x:Name="MainGrid" >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="95*" ></RowDefinition>
+            <RowDefinition Height="5*" ></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" >
+            <Button Background="Black" BorderBrush="Black" Height="130" Opacity="0" >Элемент коррекции</Button>
+            <MediaElement Name="mediaElement" Width="640" Height="372" LoadedBehavior="Manual"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" >
+            <!--<MediaElement Name="mediaElement" Width="500" Height="300" LoadedBehavior="Manual"/>-->
+            <Rectangle x:Name="DragMove_bt" Height="30" Fill="LightGray" MouseLeftButtonDown="Rectangle_MouseLeftButtonDown" Width="141" HorizontalAlignment="Center"/>
+
+            <Button x:Name="MonVidoPlay_bt" Content="Понедельник видео" Width="150" Height="30" Click="MonPlayVIdeo_parnie_click" VerticalAlignment="Bottom"/>
+            <Button x:Name="TueVidoPlay_bt" Content="Вторник видео" Width="150" Height="30" Click="TuePlayVIdeo_parnie_click" VerticalAlignment="Bottom"/>
+            <Button x:Name="WedVidoPlay_bt" Content="Среда видео" Width="150" Height="30" Click="WedPlayVIdeo_parnie_click" VerticalAlignment="Bottom"/>
+            <Button x:Name="ThuVidoPlay_bt" Content="Четверг видео" Width="150" Height="30" Click="ThuPlayVIdeo_parnie_click" VerticalAlignment="Bottom"/>
+            <Button x:Name="FriVidoPlay_bt" Content="Пятница видео" Width="150" Height="30" Click="FriPlayVIdeo_parnie_click" VerticalAlignment="Bottom"/>
+            <Button x:Name="SatVidoPlay_bt" Content="Суббота видео" Width="150" Height="30" Click="SatPlayVIdeo_parnie_click" VerticalAlignment="Bottom"/>
+            <Button x:Name="SunVidoPlay_bt" Content="Воскресенье видео" Width="150" Height="30" Click="SunPlayVIdeo_parnie_click" VerticalAlignment="Bottom"/>
+            <Button x:Name="Backgroud_clear_bt" Click="Background_clear_parnie_click">Очистить фон</Button>
+            <Button x:Name="Background_undo_bt" Click="Background_undo_parnie_click" >Возврат фона</Button>
+            <Button x:Name="StopVideo_bt" Content="Остановить воспроизведение" Width="150" Height="30" Click="StopVideo_parnie_click" VerticalAlignment="Bottom"/>
+            <Button x:Name="Shadow_dragmove_bt" Click="Shadow_bt_dragmove_parnie_click" >Скрыть кнопку навигации</Button>
+            <Button x:Name="Undo_shadow_dragmove_bt" Click="Undo_Shadow_bt_dragmove_parnie_click" >Раскрыть кнопку навигации</Button>
+
+
+
+
+            <Button x:Name="TestBt_Parn" Click="click_TestBt" >Тестовая кнопка проверки</Button>
+
+
+        </StackPanel>
+    </Grid>
+</Window>
